@@ -6,9 +6,9 @@ import RPi.GPIO as GPIO
 
 # Constants
 SENSOR_PORT = 1
-SENSOR_ADDRESS = 0x77
+SENSOR_ADDRESS = 0x77 # Check your address before running this script
 
-URL = 'http://192.168.1.108:8086/write' # InfluxDB write URL
+URL = 'http://localhost:8086/write' # InfluxDB write URL
 READING_DATA_PERIOD_MS = 5000.0
 SENDING_PERIOD = 2
 MAX_LINES_HISTORY = 1000
