@@ -13,14 +13,14 @@ A BME280 temperature sensor triggers a relay that turns on a fan and also sends 
 ##### Hardware
 * Raspberry Pi
 * BME280 Sensor
-* 5V Relay
+* 1 Channel 5V Relay [(Something like this)](https://www.amazon.com/dp/B00VRUAHLE/)
 * 5V fan
 * If you plan on using a 5V USB fan you also need a USB female to motherboard header [(something like this)](https://www.amazon.com/StarTech-Motherboard-4-Pin-Header-USBMBADAPT/dp/B000IV6S9S)
 * Breadboard
 
 ## Wiring scheme
-TODO
+*very soon*
 
 ## Usage 
-TODO
+*soon*
 
