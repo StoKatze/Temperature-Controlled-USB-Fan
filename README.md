@@ -75,7 +75,7 @@ You simply need to create a new InfluxDB database, run the python script and con
 1. OPTIONAL: you can run it to save a log file ```python3 sensor.py >> SomeFile.txt``` - You can also use screen to hide the output (```sudo apt-get update && sudo apt-get install screen && screen``` press enter and write your command. You can use ```CTRL+A+D``` to detach from your screen session and ```screen -r``` to resume it)
 
 ### Creating a Grafana dashboard
-1. Point your browser to http://<your-raspberrypi-ip>:3000 - default user admin/admin - you will be asked to set a new password
+1. Point your browser to http://```<your-raspberrypi-ip>```:3000 - default user admin/admin - you will be asked to set a new password
 1. Click on "Add Data Source", then on "Influx DB" and finally write your database name
 1. Click on "Save and Test" to test your configuration and save it
 1. Click on the "+" icon in the left menu and choose "Dashobard"
