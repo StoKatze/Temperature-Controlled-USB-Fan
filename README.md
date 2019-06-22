@@ -60,7 +60,7 @@ You simply need to create a new InfluxDB database, run the python script and con
 1. If you don't have i2cdetect install i2c-tools ```sudo apt-get update && sudo apt-get install i2c-tools``` 
 1. If your sensor doesn't show up check your connections. If it still doesn't show up you might have a dead sensor
 
-### Congfiguring InfluxDB
+### Configuring InfluxDB
 1. Point your browser to http://```<your-raspberrypi-ip>```:8083 
 1. Create a new database ```CREATE DATABASE “choose-a-db-name"```
 
