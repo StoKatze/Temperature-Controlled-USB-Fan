@@ -5,11 +5,13 @@ A BME280 temperature sensor triggers a relay that turns on a fan and also sends 
 ### Software
 * Python 3 (Should be installed by default on Raspbian - [How to install](https://www.raspberrypi.org/forums/viewtopic.php?t=181480)) 
 * Python 3 smbus2 package ```sudo pip3 install smbus2```
-* Python 3 bme280 package ```sudo pip3 install bme280```
+* Python 3 bme280 package ```sudo pip3 install RPi.bme280```
 * Python 3 RPi.GPIO package ```sudo pip3 install RPi.GPIO```
 * InfluxDB - [Instructions (should work fine on Raspbian Stretch too)](https://gist.github.com/boseji/bb71910d43283a1b84ab200bcce43c26)
 * Grafana - ```wget https://dl.grafana.com/oss/release/grafana-rpi_6.2.1_armhf.deb && sudo dpkg -i grafana-rpi_6.2.1_armhf.deb ``` - [Grafana website](https://grafana.com/grafana/download?platform=arm)
-               
+* Works fine on Raspbian Buster (Debian 10)
+* Tested on Raspbian Stretch (Debian 9)
+
 ### Hardware
 * Raspberry Pi
 * BME280 Sensor
