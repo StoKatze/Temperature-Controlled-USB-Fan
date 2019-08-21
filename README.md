@@ -74,7 +74,13 @@ You simply need to create a new InfluxDB database, run the python script and con
 1. Save and exit
 1. Execute the script ```python3 sensor.py```
 1. The script should print temperature, pressure and humidity values
-1. OPTIONAL: you can run it to save a log file ```python3 sensor.py >> SomeFile.txt``` - You can also use screen to hide the output (```sudo apt-get update && sudo apt-get install screen && screen``` press enter and write your command. You can use ```CTRL+A+D``` to detach from your screen session and ```screen -r``` to resume it)
+1. OPTIONAL: you can run it to save a log file ```python3 sensor.py >> SomeFile.txt``` or ignore all output ```python3 sensor.py &> /dev/null``` - You can also use screen to hide the output (```sudo apt-get update && sudo apt-get install screen && screen``` press enter and write your command. You can use ```CTRL+A+D``` to detach from your screen session and ```screen -r``` to resume it)
+1. OPTIONAL (but recommended): you can use crontab to auto execute the script at startup (don't forget to edit the path to match your system settings):
+```crontab -e```
+If using the start script [sensor.sh](Autostart/sensor.sh):
+```@reboot sh $HOME/sensor.sh```
+Or you can execute the python script directly (not tested but should work fine):
+```@reboot python3 $HOME/sensor.py >& /dev/null```
 
 ### Creating a Grafana dashboard
 1. Point your browser to http://```<your-raspberrypi-ip>```:3000 - default user admin/admin - you will be asked to set a new password
