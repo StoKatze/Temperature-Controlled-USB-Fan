@@ -45,7 +45,9 @@ def main():
 			print("Pressure: ", data.pressure)
 			print("Humidity: ", data.humidity)
 		
-			if data.temperature > 21:
+			if data.temperature > 25:
+				GPIO.output(PIN_IMP, GPIO.HIGH) # Relay on
+			elif data.temperature < 10: # Temp too low triggers relay to avoid liquid forming on the RPi
 				GPIO.output(PIN_IMP, GPIO.HIGH) # Relay on
 			else:
 				GPIO.output(PIN_IMP, GPIO.LOW) # Realay off
