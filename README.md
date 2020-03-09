@@ -27,7 +27,7 @@ Wiring is fairly straight-forward.
 
 ### General
 1. Connect PIN 2 (5V) and PIN 6 (GND) to two of the breadboard's power rails
-1. Connect USB VCC to 5V power rail
+1. Connect USB VDC to 5V power rail
 1. Connect USB GND to opposite GND power rail (not the one you connected the wires in the first step)
 
 ### BME280
